@@ -8,12 +8,17 @@ class App extends Component {
   state = {
     persons : [
       {name: 'raman', age: 26},
-      {name: 'neha', age: 26}
+      {name: 'xyz', age: 26}
     ]
   }
 
   switchNameHandler = () => {
-      console.log('Handler invoked');
+      this.setState({
+          persons : [
+              {name: 'raman singh', age: 26},
+              {name: 'abc', age: 26}
+          ]
+      });
   }
 
   render () {
